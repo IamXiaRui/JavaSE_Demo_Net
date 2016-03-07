@@ -67,10 +67,11 @@ class ChatReceive implements Runnable {
 	@Override
 	public void run() {
 		try {
+			// 循环接收发送端的数据
 			while (true) {
 				byte[] buf = new byte[1024];
 				DatagramPacket dp = new DatagramPacket(buf, buf.length);
-				ds.receive(dp);
+				ds.receive(dp); // 阻塞式语句
 				// 得到聊天消息
 				String ip = dp.getAddress().getHostAddress();
 				String data = new String(dp.getData(), 0, dp.getLength());
