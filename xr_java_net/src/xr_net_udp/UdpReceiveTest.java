@@ -29,7 +29,7 @@ public class UdpReceiveTest {
 		ds.receive(dp);
 
 		// 得到数据 并打印至控制台
-		String ip = dp.getAddress().toString();
+		String ip = dp.getAddress().getHostAddress();
 		String data = new String(dp.getData(), 0, dp.getLength());
 		int port = dp.getPort();
 		System.out.println("IP Address : " + ip + "  Data : " + data + "  Port : " + port);
