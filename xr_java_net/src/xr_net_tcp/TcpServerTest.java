@@ -9,7 +9,7 @@ import java.net.Socket;
  * 利用TCP 实现服务端数据接收功能
  * 
  * */
-public class TcpReceiveTest {
+public class TcpServerTest {
 
 	public static void main(String[] args) throws Exception {
 		// 建立服务端的Socket 并指定客户端的端口号

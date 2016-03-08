@@ -10,7 +10,7 @@ import java.net.Socket;
  * 
  * 需要先开服务端  否则客户端将无法发送数据
  * */
-public class TcpSendTest {
+public class TcpClientTest {
 
 	public static void main(String[] args) throws Exception {
 		// 建立Socket服务 指定主机号 和 端口号
